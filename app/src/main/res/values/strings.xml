@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToolbarTest</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_notification">提醒</string>
+    <string name="item_one">ItemOne</string>
+    <string name="item_two">ItemTwo</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="org.yh.toolbartest.CustomToolbarActivity">
+
+
+    <org.yh.toolbartest.SimpleToolbar
+        android:id="@+id/simple_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:id="@+id/txt_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/icon_back_32px"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/txt_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="标题"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/txt_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dp"
+            android:drawableEnd="@mipmap/icon_plus"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+    </org.yh.toolbartest.SimpleToolbar>
+
+</LinearLayout>
